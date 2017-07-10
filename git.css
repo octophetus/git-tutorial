@@ -1,0 +1,47 @@
+body {
+	font-family: raleway, serif;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+/*	text-align: center;*/
+}
+h2 {
+	font-size: 2em;
+	font-weight: 700;
+}
+.bluetype {
+	background-color: lightblue;
+	border: 5px solid lightblue;
+	border-radius: 7%;
+}
+.italics {
+	font-style: italic;
+}
+.flex-container {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left-flex {
+	flex: 1;
+	padding-right: 20px;
+	padding-left: 50px;
+}
+
+.right-flex {
+	flex: 1;
+	padding-left: 20px;
+	padding-right: 50px;
+}
+
+ol {
+	line-height: 2em;
+}
+
+.invisible {
+	visibility: hidden;
+}

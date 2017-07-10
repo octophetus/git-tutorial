@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>How to Git</title>
+	<link rel="stylesheet" type="text/css" href="git.css">
+	<link rel="icon" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Josefin+Slab:400,700" rel="stylesheet">
+</head>
+<body>
+<h1>General Git Tutorials</h1>
+
+<div class="flex-container">
+	<div class="left-flex">
+		<h2>How to create a Git Repository for the first time:</h2>
+			<ol>
+				<li>Make your desired changes to your HTML/CSS or whatever.</li>
+				<li>Right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
+				<li>Type <span class="bluetype">git init</span> and press enter.</li>
+				<li>Type <span class="bluetype">git add .</span> and press enter. This picks all your files in the repo.</li>
+				<li>Type <span class="bluetype">git commit -m "First commit"</span> (including the quotes!) and press enter.</li>
+				<li>Go to GitHub’s website and click “Start a Project”.</li>
+				<li>Give your repository a name and click “create repository”.</li>
+				<li>You now have a repository!  On its main “code” page, copy the full HTTPS link.  It will look something like <span class="italics">"https://github.com/username/reponame.git”</span></li>
+				<li>Back in Git Bash type <span class="bluetype">git remote add origin <span class="italics">https://github.com/username/reponame.git</span></span> and hit enter.  That URL should be the same as yours that you just copied.</li>
+				<li>Finally, type <span class="bluetype">git push origin master</span> and hit enter.</li>
+				<li>If you want your repo to be available online as a website you can view in browser, go to its “settings” tab in GitHub and towards the bottom under “GitHub Pages” you will see “Source”.  Set the “source” to <span class="italics">“master-branch”</span>.  You will then be given a link to where you can view your site.</li>
+			</ol>
+		</div>
+	<div class ="right-flex">
+		<h2>How to get changes made to your online Git Repo onto your local one:</h2>
+			<ol>
+				<li>For example, we will go to our Git Repo on GitHub’s website.</li>
+				<li>From its main “code” tab, we should create a README file.  This is a basic description of what your project is all about.  You will find a link to make one at the bottom right-hand side of the "code" tab where it says "Add a README". Write whatever you want as a description and save it by pressing "commit new file".</li>
+				<li>Right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
+				<li>Type <span class="bluetype">git pull origin master</span> and press enter.</li>
+				<p>Simple as that! You should now have the ReadMe file located in your local repo.  This works for any updates.</p>
+			</ol>
+		</div>
+	</div>
+<div class="flex-container">
+	<div class="left-flex">
+		<h2>How to send updates from your local file to your Git Repo online:</h2>
+			<ol>
+				<li>Make your desired changes to your HTML/CSS or whatever.</li>
+				<li>Right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
+				<li>3. Type <span class="bluetype">git add .</span> and press enter.</li>
+				<li>Type <span class="bluetype">git commit -m <span class="italics">"Any description about your update that you want"</span></span> (including the quotes!) and press enter.</li>
+				<li>Type <span class="bluetype">git push origin master</span></li>
+				<li>Check to see that your changes have been made on your GitHub</li>
+			</ol>
+		</div>
+	<div class="right-flex invisible">
+		<h2>How to get changes made to your online Git Repo onto your local one:</h2>
+			<ol>
+				<li>For example, we will go to our Git Repo on GitHub’s website.</li>
+				<li>From its main “code” tab, we should create a README file.  This is a basic description of what your project is all about.  Write whatever you want as a description and save it.</li>
+				<li>Right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
+				<li>Type <span class="bluetype">git pull origin master</span> and press enter.</li>
+				<p>Simple as that!!!  You should now have the ReadMe file located in your local repo.  This works for any updates.</p>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>
