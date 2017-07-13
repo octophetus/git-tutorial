@@ -51,15 +51,41 @@
 			<li>Check to see that your changes have been made on your GitHub</li>
 		</ol>
 	</div>
-	<div class="right-flex invisible">
-		<h2>How to get changes made to your online Git Repo onto your local one:</h2>
+	<div class="right-flex">
+		<h2>How to clone a repository:</h2>
+		<p>(Or, how to get a copy of a project located on GitHub onto your own local computer so that you can edit it!)<p>
 		<ol>
-			<li>For example, we will go to our Git Repo on GitHub’s website.</li>
-			<li>From its main “code” tab, we should create a README file.  This is a basic description of what your project is all about.  Write whatever you want as a description and save it.</li>
-			<li>Right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
-			<li>Type <span class="bluetype">git pull origin master</span> and press enter.</li>
-			<p>Simple as that!!!  You should now have the ReadMe file located in your local repo.  This works for any updates.</p>
+			<li>Go to the GitHub site of the project you wish to work on.</li>
+			<li>Under the repository name, click <span class="italics">Clone or download</span>.</li>
+			<li>In the <span class="italics">Clone with HTTPs</span> pop-up section, copy the clone URL for the repository.</li>
+			<li>Open gitbash and change the current working directory to the location where you want the cloned directory to be made.</li>
+			<li>In gitbash type <span class="bluetype">git clone <span class="italics">https://github.com/username/reponame</span></span> (with the link used of course being the one you took from the project's github page) and press enter.</li>
 		</ol>
+	</div>
+</div>
+<div class="flex-container">
+	<div class="left-flex">
+		<h2>How to create a branch on a project Github:</h2>
+		<p>Create a branch for a project on GitHub so that you can make your own changes to it and suggest that it be added into the 'Master' branch</p>
+		<ol>
+			<li>Start by following the steps for how to clone a repository.</li>
+			<li>In gitbash type <span class="bluetype">git checkout -b <span class="italics">new-branch-name</span></span></li> and hit enter. The "new-branch-name" is typically relevant to the changes you are making. For example, "new-landing-page" or something like that.
+			<li>Now you can go about making the changes you want to the project's HTML, CSS, etc. files</li>
+			<li>When you are ready to submit, you do so normally (following the <span class="italics">How to send updates from your local file to your Git Repo online"</span> up until it is time to push. Because it is a branch you need to type: <span class="bluetype">git push origin <span id="italics">new-branch-name</span></span></li></li>. You do not write git push origin master as usual, but instead the 'master' is replace with whatever you have named your branch in step 2.
+			<li>Type <span class="bluetype">git push origin master</span></li>
+			<li>Check to see that your changes have been made on your GitHub</li>
+		</ol>
+	</div>
+	<div class="right-flex">
+	<!-- 	<h2>How to clone a repository:</h2>
+		<p>(Or, how to get a copy of a project located on GitHub onto your own local computer so that you can edit it!)<p>
+		<ol>
+			<li>Go to the GitHub site of the project you wish to work on.</li>
+			<li>Under the repository name, click <span class="italics">Clone or download</span>.</li>
+			<li>In the <span class="italics">Clone with HTTPs</span> pop-up section, copy the clone URL for the repository.</li>
+			<li>Open gitbash and change the current working directory to the location where you want the cloned directory to be made.</li>
+			<li>In gitbash type <span class="bluetype">git clone <span class="italics">https://github.com/username/reponame</span></span> (with the link used of course being the one you took from the project's github page) and press enter.</li>
+		</ol> -->
 	</div>
 </div>
 </body>
