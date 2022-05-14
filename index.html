@@ -24,8 +24,8 @@
 			<li>Give your repository a name and click “create repository”.</li>
 			<li>You now have a repository!  On its main “code” page, copy the full HTTPS link.  It will look something like <span class="italics">"https://github.com/username/reponame.git”</span></li>
 			<li>Back in Git Bash type <span class="bluetype">git remote add origin <span class="italics">https://github.com/username/reponame.git</span></span> and hit enter.  That URL should be the same as yours that you just copied.</li>
-			<li>Finally, type <span class="bluetype">git push origin master</span> and hit enter.</li>
-			<li>If you want your repo to be available online as a website you can view in browser, go to its “settings” tab in GitHub and towards the bottom under “GitHub Pages” you will see “Source”.  Set the “source” to <span class="italics">“master-branch”</span>.  You will then be given a link to where you can view your site.</li>
+			<li>Finally, type <span class="bluetype">git push origin main</span> and hit enter.</li>
+			<li>If you want your repo to be available online as a website you can view in browser, go to its “settings” tab in GitHub and towards the bottom under “GitHub Pages” you will see “Source”.  Set the “source” to <span class="italics">“main-branch”</span>.  You will then be given a link to where you can view your site.</li>
 		</ol>
 	</div>
 	<div class ="right-flex">
@@ -33,8 +33,8 @@
 		<ol>
 			<li>For example, we will go to our Git Repo on GitHub’s website.</li>
 			<li>From its main “code” tab, we should create a README file.  This is a basic description of what your project is all about.  You will find a link to make one at the bottom right-hand side of the "code" tab where it says "Add a README". Write whatever you want as a description and save it by pressing "commit new file".</li>
-			<li>Right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
-			<li>Type <span class="bluetype">git pull origin master</span> and press enter.</li>
+			<li>Locally, right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
+			<li>Type <span class="bluetype">git pull origin main</span> and press enter.</li>
 			<p>Simple as that! You should now have the ReadMe file located in your local repo.  This works for any updates.</p>
 		</ol>
 	</div>
@@ -47,7 +47,7 @@
 			<li>Right click inside of the folder where your files are located and open a “Git Bash Here”.</li>
 			<li>Type <span class="bluetype">git add .</span> and press enter.</li>
 			<li>Type <span class="bluetype">git commit -m <span class="italics">"Any description about your update that you want"</span></span> (including the quotes!) and press enter.</li>
-			<li>Type <span class="bluetype">git push origin master</span></li>
+			<li>Type <span class="bluetype">git push origin main</span></li>
 			<li>Check to see that your changes have been made on your GitHub</li>
 		</ol>
 	</div>
@@ -66,14 +66,14 @@
 <div class="flex-container">
 	<div class="left-flex">
 		<h2>How to suggest changes to someone else's project (forking and branching):</h2>
-		<p>Create a "fork" for a project on GitHub so that you can make your own changes, or "branch" to it and suggest that it be added in!</p>
+		<p>Create a "fork" from a project on GitHub so that you can make your own changes, or "branch" to it and suggest that it be added in!</p>
 		<ol>
 			<li>Forking: Start by going to the project's GitHub. In the upper right-hand corner there will be a button called "fork". Click on that.</li>
 			<li>By clicking the "fork" option, we have just created a copy of the project onto our own GitHub which we now have control over. On your profile, find your personal copy of the project you've just made.</li>
 			<li>Then, follow the exact same steps for how to clone a repository.</li>
 			<li>Branching: In gitbash type <span class="bluetype">git checkout -b <span class="italics">new-branch-name</span></span> and hit enter. The "new-branch-name" is typically relevant to the changes you are making. For example, "new-landing-page" or something like that.</li>
 			<li>Now you can go about making the changes you want to the project's HTML, CSS, etc. files</li>
-			<li>Pushing: When you are ready to submit, you do so normally (following the <span class="italics">How to send updates from your local file to your Git Repo online</span>) up until it is time to actually push. Because it is a branch you need to type: <span class="bluetype">git push origin <span id="italics">new-branch-name</span></span>. You do not write git push origin master as usual, but instead the 'master' is replaced with whatever you have named your branch in step 4.</li>
+			<li>Pushing: When you are ready to submit, you do so normally (following the <span class="italics">How to send updates from your local file to your Git Repo online</span>) up until it is time to actually push. Because it is a branch you need to type: <span class="bluetype">git push origin <span id="italics">new-branch-name</span></span>. You do not write git push origin main as usual, but instead the 'main' is replaced with whatever you have named your branch in step 4.</li>
 			<li>Check to see that your changes have been made on your GitHub. You should see the project now has a branch.</span></li>
 			<li>On this new branch you've created, you need to click on a button called "New pull request". This is what lets you send a request to the original creator to include your code. Write any comment you like about the changes you've made and then "create pull request".</li>
 			<li>Once a pull request is submitted and everything looks good, the creator can then choose to "merge" the "pull request", meaning their project will include the code that you've submitted! Neat!</li>
